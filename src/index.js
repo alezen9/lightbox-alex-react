@@ -48,7 +48,7 @@ class Gallery extends Component {
 
   componentWillUnmount(){
     const modalDiv = document.querySelector('#modal-alex-box')
-    document.querySelector('body').removeChild(modalDiv)
+    modalDiv && document.querySelector('body').removeChild(modalDiv)
   }
 
   renderThumbnails = () => {
